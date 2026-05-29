@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N S Vaishnavi | AI x Biology</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#07111f;--card:rgba(255,255,255,.06);--accent:#34d399;--cyan:#22d3ee;--text:#e5eef8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+.hero{
+min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;position:relative;
+background:radial-gradient(circle at 20% 20%,#123a5f,transparent 30%),radial-gradient(circle at 80% 30%,#0f766e,transparent 25%),#07111f;
+}
+.hero:before{
+content:"";position:absolute;inset:0;
+background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+background-size:40px 40px;
+}
+.hero-content{position:relative;z-index:2;max-width:900px}
+h1{font-size:clamp(3rem,8vw,6rem);margin:0}
+.glow{color:var(--accent)}
+.subtitle{font-size:1.3rem;margin:15px 0;color:#b8d7f0}
+.tagline{max-width:700px;margin:auto;font-size:1.1rem}
+.btn{
+display:inline-block;margin:10px;padding:14px 22px;border-radius:12px;text-decoration:none;
+background:var(--accent);color:#001b17;font-weight:700
+}
+.btn2{background:transparent;border:1px solid var(--cyan);color:var(--cyan)}
+.container{max-width:1200px;margin:auto;padding:80px 24px}
+section{margin-bottom:90px}
+h2{font-size:2.2rem;color:var(--accent)}
+.card{
+background:var(--card);backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.08);
+padding:24px;border-radius:20px;
+transition:.3s;
+}
+.card:hover{transform:translateY(-6px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.timeline{position:relative;padding-left:30px}
+.timeline:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:4px;background:linear-gradient(var(--accent),var(--cyan))}
+.node{position:relative;margin-bottom:30px}
+.node:before{content:"";position:absolute;left:-30px;top:10px;width:18px;height:18px;border-radius:50%;background:var(--accent)}
+.skills span{
+display:inline-block;padding:10px 14px;margin:6px;border-radius:999px;background:#0f1f35
+}
+.terminal{
+font-family:monospace;background:#020617;border-radius:16px;padding:20px;color:var(--cyan)
+}
+footer{text-align:center;padding:40px;border-top:1px solid rgba(255,255,255,.08)}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="hero-content">
+<h1>N S <span class="glow">Vaishnavi</span></h1>
+<p class="subtitle">Bioinformatics • Data Science • Bioprocessing</p>
+<p class="tagline">
+Building toward a future where AI can reason through biology, accelerate discovery,
+and optimize how biological products are developed and manufactured.
+</p>
+
+<div class="terminal" style="margin:30px auto;max-width:700px;text-align:left">
+✓ Biomarker Discovery Experience<br>
+✓ GMP & Bioprocessing Exposure<br>
+✓ Computational Biology Projects<br>
+✓ Exploring AI for Biology
+</div>
+
+<a href="#projects" class="btn">Explore Research Missions</a>
+<a href="#vision" class="btn btn2">Future Vision</a>
+</div>
+</section>
+
+<div class="container">
+
+<section>
+<h2>Who Am I?</h2>
+<div class="card">
+<p>
+I'm a Bioinformatics graduate with experience spanning biological data analysis,
+biomarker discovery, statistical modeling, and downstream bioprocessing.
+What excites me most is the possibility of combining biology, data science, and AI
+to solve problems that are currently too complex for humans or machines alone.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Journey Through Biology</h2>
+<div class="timeline">
+
+<div class="node card">
+<h3>🧬 BiomarkIQ</h3>
+<p>Worked on clinical datasets using Python and R, data validation, visualization, and biomarker discovery workflows.</p>
+</div>
+
+<div class="node card">
+<h3>⚙️ Reliance Life Sciences</h3>
+<p>Worked on downstream bioprocessing, eBMR systems, GMP documentation, and manufacturing data integrity.</p>
+</div>
+
+<div class="node card">
+<h3>🚀 Next Destination</h3>
+<p>AI-assisted biological reasoning, computational discovery, and bioprocess optimization.</p>
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+<h2>Research Experience</h2>
+<div class="grid">
+
+<div class="card">
+<h3>01</h3>
+<h4>Genetic Signatures for Diabetic Complications</h4>
+<p>Analyzed GEO datasets, performed pathway analysis, and built logistic regression models for biomarker prediction.</p>
+</div>
+
+<div class="card">
+<h3>02</h3>
+<h4>Antimicrobial Resistance</h4>
+<p>Virtual screening, ADME assessment, and molecular dynamics simulations for inhibitor discovery.</p>
+</div>
+
+<div class="card">
+<h3>03</h3>
+<h4>Structure-Guided Drug Discovery</h4>
+<p>Explored therapeutic target identification against Balamuthia mandrillaris using structural genomics concepts.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Tech Stack</h2>
+<div class="skills">
+<span>Python</span><span>R</span><span>Bioinformatics</span><span>Statistics</span>
+<span>Data Visualization</span><span>SQL</span><span>NCBI</span>
+<span>Bioprocessing</span><span>GMP</span><span>ALCOA++</span>
+</div>
+</section>
+
+<section>
+<h2>Things I'm Curious About</h2>
+<div class="grid">
+<div class="card">Can AI identify biomarkers faster than traditional pipelines?</div>
+<div class="card">How can LLMs be utilized to accelerate drug discovery?</div>
+<div class="card">Can bioprocessing become semi-autonomous?</div>
+</div>
+</section>
+
+<section id="vision">
+<h2>Future Vision</h2>
+<div class="card">
+<p>
+My goal is to build and manage AI-powered systems capable of navigating complex biological
+problems, accelerating scientific discovery, and improving biomanufacturing through data-driven decision making.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Beyond Science</h2>
+<div class="card">
+Executive Head at E-Cell SASTRA • Active Member of KS Upahaar • Carnatic Music Enthusiast
+</div>
+</section>
+
+<section>
+<h2>Let's Connect</h2>
+<div class="card">
+<p>Interested in Bioinformatics, Data Science, Computational Biology, AI for Life Sciences, and Bioprocess Innovation.</p>
+<p>📧 vaishnavi.rajan1302@gmail.com</p>
+<p> https://www.linkedin.com/in/vaishnavisrajan/ </p>
+</div>
+</section>
+
+</div>
+
+<footer>
+N S Vaishnavi
+</footer>
+
+</body>
+</html>
